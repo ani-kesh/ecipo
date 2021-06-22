@@ -1,0 +1,8 @@
+  @media only screen and (max-width: 1000px) {
+    .flex > div {
+      width: 100%;
+    }
+    .nav-bar{
+        display:none;
+    }
+  }

@@ -1,0 +1,53 @@
+@import url(root.css);
+@import url(nav.css);
+@import url(main.css);
+@import url(main.media.css);
+@import url(nav.media.css);
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+.left-side {
+  width: 40%;
+  background-color: black;
+}
+.right-side {
+  width: 60%;
+}
+.h-50 {
+  width: 100%;
+  min-height: 50vh;
+}
+.right-side-1 {
+  width: 40%;
+  background-color: darkmagenta;
+}
+.right-side-2 {
+  width: 60%;
+  background-color: #dfebec;
+  padding: 10px;
+}
+.right-side-3 {
+  width: 70%;
+  background-color: yellow;
+}
+.right-side-4 {
+  position: relative;
+  min-height: 370px;
+  width: 30%;
+  background-color: #dfebec;
+}
+#logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.about-title {
+  font-size: 3rem;
+}
+.about-content {
+  text-align: justify;
+  padding-top: 20px;
+  font-size: 1.2rem;
+}

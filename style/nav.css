@@ -1,0 +1,30 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 40%;
+  height: 70px;
+  background-color: var(--main-color);
+  opacity: 0.4;
+}
+
+#nav-list {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
+
+.nav-bar ul {
+  display: inline-block;
+  list-style: none;
+}
+.nav-bar ul li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+}
+
+.nav-bar ul li a {
+  color: black;
+  font-weight: 600;
+}
+
