@@ -1,0 +1,17 @@
+.snap-x {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+#slide-container-div{
+  height: 92vh;
+}
+#slider-container{
+    width:900px;
+    height: 80vh;
+}

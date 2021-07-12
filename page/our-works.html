@@ -26,9 +26,9 @@
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style/slide.css" />
-    <link rel="stylesheet" href="./style/left-nav.css" />
-    <link rel="stylesheet" href="./style/right-side-home.css" />
+
+    <link rel="stylesheet" href="../style/map.css" />
+    <link rel="stylesheet" href="../style/calculate.css" />
     <!-- styles end -->
 </head>
 
@@ -36,7 +36,7 @@
     <header>
         <!-- nav start-->
         <nav class="relative px-4 py-4 flex justify-between items-center bg-gray-900">
-            <a class="text-3xl text-white font-bold leading-none" href="#">
+            <a class="text-3xl text-white font-bold leading-none" href="../index.html">
                 Ecipo
             </a>
             <div class="lg:hidden">
@@ -49,7 +49,7 @@
             </div>
             <ul
                 class="hidden absolute top-1/2 left-1/4 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="../index.html">Home</a></li>
                 <li class="text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
                         class="w-4 h-4 current-fill" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@
                             d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                     </svg>
                 </li>
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="./page/our-works.html">Our works</a></li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Our works</a></li>
                 <li class="text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
                         class="w-4 h-4 current-fill" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@
                             d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                     </svg>
                 </li>
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="./page/contact.html">Contact</a></li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="navbar-menu relative z-50 hidden">
@@ -93,15 +93,15 @@
                     <ul>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Home</a>
+                                href="../index.html">Home</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="./page/our-works.html">Our works</a>
+                                href="#">Our works</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="./page/contact.html">Contact</a>
+                                href="./contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -112,53 +112,112 @@
                 </div>
             </nav>
         </div>
+        <div class="flex justify-end m-1">
+            <a href="#window" class="bg-gradient-to-t from-gray-300 p-2 m-0.5">Window</a>
+            <a href="#door" class="bg-gradient-to-t from-gray-300 p-2 m-0.5">Door</a>
+            <a href="#shower-cabin" class="bg-gradient-to-t from-gray-300 p-2 m-0.5">Shower Cabin</a>
+        </div>
         <!-- nav end -->
     </header>
-
     <main>
-        <div class="flex items-start flex-wrap p-5">
-            <div class="flex content-start" id="slide-container-div">
-                <div class="bg-white overflow-x-hidden flex shadow-2xl snap-x border border-gray-500"
-                    id="slider-container">
-                    <div class="snap-start w-full  h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative"
-                        id="slide-1">
-                        <img src="./pic/window/IMG_5192.jpg" class="h-full w-full object-cover absolute inset-0 z-10">
-                        <h1 class="z-20 text-center font-black text-8xl">ՈՐԱԿՅԱԼ ԵՎ ԺԱՄԱՆԱԿԻՆ </h1>
+        <div class="w-full flex flex-wrap p-3">
+            <div class="w-full flex m-1" id="window">
+                <div class="w-full">
+                    <h2 class="m-1 text-3xl font-black text-gray-700">Եվրո դռներ և պատուհաններ</h2>
+                    <div class="w-full flex flex-wrap p-5">
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/1.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/2.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/3.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/4.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/5.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/6.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/7.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/8.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/9.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/10.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/11.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/12.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/window/13.svg" width="250" />
+                        </div>
                     </div>
-                    <div class="snap-start w-full hidden h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative"
-                        id="slide-2">
-                        <img src="./pic/other/IMG_5193.jpg" class="h-full w-full  object-cover absolute inset-0 z-10">
-                        <h1 class="z-20 text-center font-black text-8xl">ՈՐԱԿՅԱԼ ԵՎ ԺԱՄԱՆԱԿԻՆ </h1>
+
+                </div>
+            </div>
+            <div class="w-full flex m-1" id="door">
+                <div class="w-full">
+                    <h2 class="m-1 text-3xl font-black text-gray-700">Դռներ</h2>
+                    <div class="w-full flex flex-wrap p-5">
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/door/2.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/door/3.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/door/4.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/door/5.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/door/6.svg" width="250" />
+                        </div>
                     </div>
-                    <div class="snap-start w-full  h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative"
-                        id="slide-3">
-                        <img src="./pic/window/IMG_5212.jpg" class="h-full w-full  object-cover absolute inset-0 z-10">
-                        <h1 class="z-20 text-center font-black text-8xl">ՈՐԱԿՅԱԼ ԵՎ ԺԱՄԱՆԱԿԻՆ </h1>
+
+                </div>
+            </div>
+            <div class="w-full flex m-1" id="shower-cabin">
+                <div class="w-full">
+                    <h2 class="m-1 text-3xl font-black text-gray-700">Լոգախցիկներ</h2>
+                    <div class="w-full flex flex-wrap p-5">
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/shower_cabin/1.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/shower_cabin/2.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/shower_cabin/3.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/shower_cabin/4.svg" width="250" />
+                        </div>
+                        <div class="m-3 border border-gray-300 rounded-sm shadow-md">
+                            <img src="../pic/shower_cabin/5.svg" width="250" />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="w-1/3 relative text-right mx-auto" id="about-container">
-                <label class="font-black tracking-wide text-2xl p-5">Մեր մասին</label>
-                <p class="break-word p-3 text-justify">
-                    «Ecipo» ընկերությունը հանդիսանում է Հայաստանի Հանրապետության խոշոր
-                    շինարարական ընկերություններից: Իր գործունեության տարիների ընթացքում
-                    ընկերությունը արդարացի դրսևորվել է որպես հուսալի գործընկեր՝
-                    իրականացնելով ցանկացած տիպի շինարարական աշխատանքներ:
-                    Ընկերությունը հիմնադրվել է 1990 թ.-ին:
-                    Մենք ունենք հսկայական փորձ կատարելու համալիր շինարարական աշխատանքներ
-                    ցանկացած ուղղություններով։
-                </p>
-                <img src="pic/logo.png" class="bg-cover relative left-1/2" width="200" />
-            </div>
-
         </div>
-
     </main>
-
 
     <footer class="footer bg-white relative pt-1 border-b-2 border-blue-700">
         <div class="container mx-auto px-6">
-
             <div class="sm:flex sm:mt-8">
                 <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
                     <div class="flex flex-col">
@@ -191,7 +250,6 @@
     </footer>
 </body>
 
-<script src="script/burger-menu.js"></script>
-<script src="script/slide.js"></script>
+<script src="../script/burger-menu.js"></script>
 
 </html>

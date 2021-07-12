@@ -26,9 +26,9 @@
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style/slide.css" />
-    <link rel="stylesheet" href="./style/left-nav.css" />
-    <link rel="stylesheet" href="./style/right-side-home.css" />
+
+    <link rel="stylesheet" href="../style/map.css" />
+    <link rel="stylesheet" href="../style/left-nav.css" />
     <!-- styles end -->
 </head>
 
@@ -36,7 +36,7 @@
     <header>
         <!-- nav start-->
         <nav class="relative px-4 py-4 flex justify-between items-center bg-gray-900">
-            <a class="text-3xl text-white font-bold leading-none" href="#">
+            <a class="text-3xl text-white font-bold leading-none" href="../index.html">
                 Ecipo
             </a>
             <div class="lg:hidden">
@@ -49,7 +49,7 @@
             </div>
             <ul
                 class="hidden absolute top-1/2 left-1/4 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="../index.html">Home</a></li>
                 <li class="text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
                         class="w-4 h-4 current-fill" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@
                             d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                     </svg>
                 </li>
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="./page/our-works.html">Our works</a></li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="../page/our-works.html">Our works</a></li>
                 <li class="text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
                         class="w-4 h-4 current-fill" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@
                             d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                     </svg>
                 </li>
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="./page/contact.html">Contact</a></li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="navbar-menu relative z-50 hidden">
@@ -93,15 +93,15 @@
                     <ul>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Home</a>
+                                href="../index.html">Home</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="./page/our-works.html">Our works</a>
+                                href="./our-works.html">Our works</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="./page/contact.html">Contact</a>
+                                href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -116,45 +116,42 @@
     </header>
 
     <main>
-        <div class="flex items-start flex-wrap p-5">
-            <div class="flex content-start" id="slide-container-div">
-                <div class="bg-white overflow-x-hidden flex shadow-2xl snap-x border border-gray-500"
-                    id="slider-container">
-                    <div class="snap-start w-full  h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative"
-                        id="slide-1">
-                        <img src="./pic/window/IMG_5192.jpg" class="h-full w-full object-cover absolute inset-0 z-10">
-                        <h1 class="z-20 text-center font-black text-8xl">ՈՐԱԿՅԱԼ ԵՎ ԺԱՄԱՆԱԿԻՆ </h1>
-                    </div>
-                    <div class="snap-start w-full hidden h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative"
-                        id="slide-2">
-                        <img src="./pic/other/IMG_5193.jpg" class="h-full w-full  object-cover absolute inset-0 z-10">
-                        <h1 class="z-20 text-center font-black text-8xl">ՈՐԱԿՅԱԼ ԵՎ ԺԱՄԱՆԱԿԻՆ </h1>
-                    </div>
-                    <div class="snap-start w-full  h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative"
-                        id="slide-3">
-                        <img src="./pic/window/IMG_5212.jpg" class="h-full w-full  object-cover absolute inset-0 z-10">
-                        <h1 class="z-20 text-center font-black text-8xl">ՈՐԱԿՅԱԼ ԵՎ ԺԱՄԱՆԱԿԻՆ </h1>
+
+        <div class="flex items-start flex-wrap">
+
+            <div class="w-full flex flex-wrap justify-items-center justify-around p-5">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=31/4%20h.hovsepian&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe><br>
                     </div>
                 </div>
-            </div>
-            <div class="w-1/3 relative text-right mx-auto" id="about-container">
-                <label class="font-black tracking-wide text-2xl p-5">Մեր մասին</label>
-                <p class="break-word p-3 text-justify">
-                    «Ecipo» ընկերությունը հանդիսանում է Հայաստանի Հանրապետության խոշոր
-                    շինարարական ընկերություններից: Իր գործունեության տարիների ընթացքում
-                    ընկերությունը արդարացի դրսևորվել է որպես հուսալի գործընկեր՝
-                    իրականացնելով ցանկացած տիպի շինարարական աշխատանքներ:
-                    Ընկերությունը հիմնադրվել է 1990 թ.-ին:
-                    Մենք ունենք հսկայական փորձ կատարելու համալիր շինարարական աշխատանքներ
-                    ցանկացած ուղղություններով։
-                </p>
-                <img src="pic/logo.png" class="bg-cover relative left-1/2" width="200" />
+                <div class="w-1/2">
+                    <address class="p-5 leading-loose">
+                        Էլ․ փոստ` <a href="mailto:myecipo@gmail.com" class="text-blue-500">myecipo@gmail.com</a> <br>
+                        Հեռախոս` <a href="tel:+37443560560" class="text-blue-500">(374)43-560-560</a> <br>
+                        Հասցե` 31/4 Հ․ Հովսեփյան,Ներքին Շենգավիթ, 0046, Երևան, Հայաստան<br>
+                    </address>
+
+                    <div class="p-10 flex">
+                        <div class="p-2 m-2 bg-gray-400 rounded-2xl hover:bg-gray-600">
+                            <a href="https://www.facebook.com/Ecipo-100738855384466/" target="_blank"> <i
+                                    class="fa fa-facebook-square text-gray-900 fa-5x" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="p-2 m-2 bg-gray-400 rounded-2xl hover:bg-gray-600">
+                            <a href="https://www.instagram.com/myecipo/" target="_blank"><i
+                                    class="fa fa-instagram text-gray-900 fa-5x" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
 
     </main>
-
 
     <footer class="footer bg-white relative pt-1 border-b-2 border-blue-700">
         <div class="container mx-auto px-6">
@@ -191,7 +188,6 @@
     </footer>
 </body>
 
-<script src="script/burger-menu.js"></script>
-<script src="script/slide.js"></script>
+<script src="../script/burger-menu.js"></script>
 
 </html>
